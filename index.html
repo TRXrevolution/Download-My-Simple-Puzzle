@@ -1,178 +1,213 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport"
-      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-      <meta name="description" content="Mainkan My Simple Puzzle — game puzzle santai yang melatih logika dan kesabaran.">
-<meta property="og:image" content="icon.png">
-<meta property="og:title" content="My Simple Puzzle">
-<meta property="og:description" content="Game puzzle sederhana untuk Android.">
-<title>Download My Simple Puzzle</title>
-<style>
-  body {
-  font-family: "Poppins", sans-serif;
-  text-align: center;
-  background-image: url("bg.jpg");
-  background-size: cover;           /* gambar menutupi seluruh layar */
-  background-position: center;      /* posisi di tengah */
-  background-repeat: no-repeat;     /* tidak diulang */
-  color: #fff;
-  margin: 0;
-  padding: 117px 20px;
-}
-  .container {
-  max-width: 480px;
-  margin: auto;
-  background: #919191b7;
-  padding: 30px;
-  border-radius: 20px;
-  animation: rgbGlow 6s linear infinite;
-}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="description" content="Mainkan My Simple Puzzle — game puzzle santai yang melatih logika dan kesabaran.">
+    <meta property="og:image" content="icon.png">
+    <meta property="og:title" content="My Simple Puzzle">
+    <meta property="og:description" content="Game puzzle sederhana untuk Android.">
+    <title>Download My Simple Puzzle</title>
+    <style>
+        body {
+            font-family: "Poppins", sans-serif;
+            text-align: center;
+            background-image: url("bg.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: #fff;
+            margin: 0;
+            padding: 117px 20px;
+        }
 
-@keyframes rgbGlow {
-  0% { box-shadow: 0 0 15px #ff0000; }
-  25% { box-shadow: 0 0 20px #00ff00; }
-  50% { box-shadow: 0 0 20px #00eaff; }
-  75% { box-shadow: 0 0 20px #ff00ff; }
-  100% { box-shadow: 0 0 15px #ff0000; }
-}
+        .container {
+            max-width: 480px;
+            margin: auto;
+            background: #919191b7;
+            padding: 30px;
+            border-radius: 20px;
+            animation: rgbGlow 6s linear infinite;
+        }
 
-  img {
-    width: 140px;
-    border-radius: 25px;
-    margin-top: 10px;
-  }
+        @keyframes rgbGlow {
+            0% { box-shadow: 0 0 15px #ff0000; }
+            25% { box-shadow: 0 0 20px #00ff00; }
+            50% { box-shadow: 0 0 20px #00eaff; }
+            75% { box-shadow: 0 0 20px #ff00ff; }
+            100% { box-shadow: 0 0 15px #ff0000; }
+        }
 
-  h1 {
-  font-size: 2rem;
-  font-weight: bold;
-  text-transform: uppercase;
-  background: linear-gradient(90deg, #00eaff, #ff00ff, #00ff6e, #ffff00);
-  background-size: 400%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: plasmaText 6s linear infinite;
-  text-shadow: 0 0 12px #00eaff40;
-}
+        img {
+            width: 140px;
+            border-radius: 25px;
+            margin-top: 10px;
+        }
 
-/* Efek perubahan warna halus */
-@keyframes plasmaText {
-  0%   { background-position: 0% 50%; filter: hue-rotate(0deg); }
-  50%  { background-position: 100% 50%; filter: hue-rotate(180deg); }
-  100% { background-position: 0% 50%; filter: hue-rotate(360deg); }
-}
+        h1 {
+            font-size: 2rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            background: linear-gradient(90deg, #00eaff, #ff00ff, #00ff6e, #ffff00);
+            background-size: 400%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: plasmaText 6s linear infinite;
+            text-shadow: 0 0 12px #00eaff40;
+        }
 
-  h3 {
-    font-weight: normal;
-    color: #bbb;
-    margin-top: 0;
-  }
+        /* Efek perubahan warna halus */
+        @keyframes plasmaText {
+            0%   { background-position: 0% 50%; filter: hue-rotate(0deg); }
+            50%  { background-position: 100% 50%; filter: hue-rotate(180deg); }
+            100% { background-position: 0% 50%; filter: hue-rotate(360deg); }
+        }
 
-  p {
-    color: #ffffff;
-    line-height: 1.6;
-    text-align: justify;
-    margin: 20px 0;
-  }
+        h3 {
+            font-weight: normal;
+            color: #bbb;
+            margin-top: 0;
+        }
 
-  a.button {
-  display: inline-block;
-  color: #fff;
-  text-decoration: none;
-  padding: 12px 28px;
-  border-radius: 12px;
-  font-weight: bold;
-  font-size: 1rem;
-  background: #111;
-  border: 2px solid #00eaff;
-  animation: plasma 6s linear infinite;
-  box-shadow: 0 0 15px #00eaff40;
-  transition: 0.3s;
-}
-a.button:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 25px #00ffff, 0 0 50px #00ffff80;
-}
-@keyframes plasma {
-  0%   { border-color: #00eaff; box-shadow: 0 0 15px #00eaff40; }
-  25%  { border-color: #ff00ff; box-shadow: 0 0 20px #ff00ff60; }
-  50%  { border-color: #00ff6e; box-shadow: 0 0 20px #00ff6e60; }
-  75%  { border-color: #ffff00; box-shadow: 0 0 20px #ffff0050; }
-  100% { border-color: #00eaff; box-shadow: 0 0 15px #00eaff40; }
-}
+        p {
+            color: #ffffff;
+            line-height: 1.6;
+            text-align: justify;
+            margin: 20px 0;
+        }
 
-  footer {
-    margin-top: 40px;
-    color: #666;
-    font-size: 0.9rem;
-  }
-    .link-disabled {
-  color:#00eaff;
-}
- .note {
-    background: rgba(0,255,255,0.1);
-    border-left: 3px solid #00eaff;
-    padding: 10px;
-    border-radius: 6px;
-    color: #bffcff;
-    font-size: 14px;
-    margin: 10px 0;
-  }
-</style>
+        a.button {
+            display: inline-block;
+            color: #fff;
+            text-decoration: none;
+            padding: 12px 28px;
+            border-radius: 12px;
+            font-weight: bold;
+            font-size: 1rem;
+            background: #111;
+            border: 2px solid #00eaff;
+            animation: plasma 6s linear infinite;
+            box-shadow: 0 0 15px #00eaff40;
+            transition: 0.3s;
+        }
+
+        a.button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 25px #00ffff, 0 0 50px #00ffff80;
+        }
+
+        @keyframes plasma {
+            0%   { border-color: #00eaff; box-shadow: 0 0 15px #00eaff40; }
+            25%  { border-color: #ff00ff; box-shadow: 0 0 20px #ff00ff60; }
+            50%  { border-color: #00ff6e; box-shadow: 0 0 20px #00ff6e60; }
+            75%  { border-color: #ffff00; box-shadow: 0 0 20px #ffff0050; }
+            100% { border-color: #00eaff; box-shadow: 0 0 15px #00eaff40; }
+        }
+
+        footer {
+            margin-top: 40px;
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        .link-disabled {
+            color:#00eaff;
+        }
+
+        .note {
+            background: rgba(0,255,255,0.1);
+            border-left: 3px solid #00eaff;
+            padding: 10px;
+            border-radius: 6px;
+            color: #bffcff;
+            font-size: 14px;
+            margin: 10px 0;
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
-    <img src="icon.png" alt="Logo My Simple Puzzle" style="border-radius:50%;">
-    <h1>My Simple Puzzle</h1>
-    <h3>Game Puzzle Sederhana untuk Android</h3>
+    <div class="container">
+        <img src="icon.png" alt="Logo My Simple Puzzle" style="border-radius:50%;">
+        <h1>My Simple Puzzle</h1>
+        <h3>Game Puzzle Sederhana untuk Android</h3>
 
-    
+        <p>
+            <b>My Simple Puzzle</b> adalah permainan menyusun potongan gambar menjadi utuh kembali.
+            Game ini dirancang untuk melatih <b>logika, kesabaran,</b> dan <b>ketelitian</b> dengan cara yang santai dan menyenangkan.
+        </p>
+        <p>
+            Di balik kesederhanaannya, setiap langkah menyusun potongan gambar
+            mengajarkan kita untuk berpikir strategis dan tidak terburu-buru.
+            My Simple Puzzle dibuat dengan tujuan memberikan pengalaman bermain yang ringan, tapi tetap menantang otak dan fokus.
+        </p>
 
-  <p>
-    <b>My Simple Puzzle</b> adalah permainan menyusun potongan gambar menjadi utuh kembali.  
-    Game ini dirancang untuk melatih <b>logika, kesabaran,</b> dan <b>ketelitian</b> dengan cara yang santai dan menyenangkan.
-  </p>
+        <h3 style="color:#00eaff;">✨ Fitur Unggulan:</h3>
+        <p>
+            🎨 <b>Personalisasi tampilan</b><br> — ubah warna, tombol, dan background sesuai keinginan.<br><br>
+            🔊 <b>Musik & Visualizer</b><br> — dengarkan musik sambil menikmati efek gelombang suara neon.<br><br>
+            🧩 <b>Level Puzzle</b> hingga 10×10 <br>— cocok untuk pemula maupun ahli.<br><br>
+            🔀 <b>Gambar random otomatis</b> setiap permainan baru.<br><br>
+            📱 <b>Upload gambar sendiri</b> untuk dijadikan puzzle pribadi.<br><br>
+            💾 <b>Pengaturan tersimpan otomatis</b><br>— agar semua kustomisasi tidak hilang.<br>
+        </p>
 
-  <p>
-    Di balik kesederhanaannya, setiap langkah menyusun potongan gambar
-    mengajarkan kita untuk berpikir strategis dan tidak terburu-buru.  
-    My Simple Puzzle dibuat dengan tujuan memberikan pengalaman bermain yang ringan, tapi tetap menantang otak dan fokus.
-  </p>
+        <p>
+            Klik tombol di bawah ini untuk mengunduh versi terbaru game <b>My Simple Puzzle</b> ke perangkat Android kamu:
+        </p>
 
-   
- <h3 style="color:#00eaff;">✨ Fitur Unggulan:</h3>
-  <p>
-    🎨 <b>Personalisasi tampilan</b><br> — ubah warna, tombol, dan background sesuai keinginan.<br><br>
-    🔊 <b>Musik & Visualizer</b><br> — dengarkan musik sambil menikmati efek gelombang suara neon.<br><br>
-    🧩 <b>Level Puzzle</b> hingga 10×10 <br>— cocok untuk pemula maupun ahli.<br><br>
-    🔀 <b>Gambar random otomatis</b> setiap permainan baru.<br><br>
-    📱 <b>Upload gambar sendiri</b> untuk dijadikan puzzle pribadi.<br><br>
-    💾 <b>Pengaturan tersimpan otomatis</b><br>— agar semua kustomisasi tidak hilang.<br>
-  </p>
-   <p>
-      Klik tombol di bawah ini untuk mengunduh versi terbaru game <b>My Simple Puzzle</b> ke perangkat Android kamu:
-    </p>
-    <!-- 🔹 Tombol download lokal -->
-    <h3 style="color:#00eaff;">Versi terbaru ✨</h3>
-     <a class="button" href="My Simple Puzzle 1.3.4.apk" download>
-      📦 Unduh Versi 1.3.4
-    </a><br><br><br>
-<a>Versi lama</a><br><br>
-    <a class="button" href="My Simple Puzzle 1.1.0.apk" download>
-      📦 Unduh Versi 1.1.0
-    </a><br><br><br> <div class="note">
-      💡 <b>Tips:</b> Mulailah dari sudut gambar, lalu lanjutkan ke baris atau kolom berikutnya.
+        <!-- 🔹 Tombol download lokal -->
+        <h3 style="color:#00eaff;">Versi terbaru ✨</h3>
+
+        <!-- Bagian yang diproteksi -->
+        <a class="button" id="downloadLink" href="#" download>
+            📦 Unduh Versi 1.3.4
+        </a>
+        <br><br><br>
+        <a>Versi lama</a><br><br>
+        <a class="button" id="downloadLinkOld" href="#" download>
+            📦 Unduh Versi 1.1.0
+        </a>
+        <br><br><br>
+
+        <div class="note">
+            💡 <b>Tips:</b> Mulailah dari sudut gambar, lalu lanjutkan ke baris atau kolom berikutnya.
+        </div>
+        <br><br><br>
+
+        <a href="#" class="link-disabled">Suka dengan permainan My Simple Puzzle?</a><br><br>
+        <a href="#" class="link-disabled">Saran anda...</a><br><br><br>
+
+        <footer>
+            <p>My Simple Puzzle &nbsp;|&nbsp; © 2025 S²D coding</p>
+        </footer>
     </div>
-<br><br><br>
-    
-<a  href="https://docs.google.com/forms/d/e/1FAIpQLSdhIgvdvIA9ubtAJuFSkXJblvJJXRixdmIoAx4UQLwkxt9xlw/viewform?usp=header" class="link-disabled">Suka dengan permainan My Simple Puzzle?</a>
-<br><br>
- <a href="https://docs.google.com/forms/d/e/1FAIpQLSdPza5phd2nuKi3dVyWJGmVnPmFAMya1pMm501nPOG7rNh7SQ/viewform?usp=publish-editor" class="link-disabled">Saran anda...</a>
-<br><br><br>
-    <footer>
-      <p>My Simple Puzzle &nbsp;|&nbsp; © 2025 S²D coding</p>
-    </footer>
-  </div>
+
+    <script>
+        // Fungsi untuk menghasilkan URL yang di-encode
+        function generateEncodedURL(url) {
+            let bagian1 = btoa(url.substring(0, 8));  // "https://" atau "http://"
+            let bagian2 = btoa(url.substring(8));   // Sisa URL
+            return bagian1 + "$" + bagian2; // Gabungkan dengan pemisah
+        }
+
+        // Fungsi untuk mendekode dan menetapkan URL ke elemen
+        function setDownloadLink(elementId, encodedURL) {
+            let bagian = encodedURL.split("$");
+            let url = atob(bagian[0]) + atob(bagian[1]);
+            document.getElementById(elementId).href = url;
+        }
+
+        // URL yang akan di-encode
+        let url1 = "My Simple Puzzle 1.3.4.apk";
+        let url2 = "My Simple Puzzle 1.1.0.apk";
+
+        // Encode URL
+        let encodedURL1 = generateEncodedURL(url1);
+        let encodedURL2 = generateEncodedURL(url2);
+
+        // Set URL ke elemen dengan ID yang sesuai
+        setDownloadLink("downloadLink", encodedURL1);
+        setDownloadLink("downloadLinkOld", encodedURL2);
+    </script>
 </body>
 </html>
